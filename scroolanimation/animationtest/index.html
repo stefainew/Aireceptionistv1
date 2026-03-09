@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>АИ Рецепционист | Иновативни Решения за Вашия Бизнес</title>
+  <meta name="description"
+    content="Революционният AI рецепционист за български бизнеси. Отговаря на обаждания 24/7, записва часове и обслужва клиенти на безупречен български." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-brand">АИ<span>рецепционист</span></div>
+    <div id="loader-bar">
+      <div id="loader-fill"></div>
+    </div>
+    <div id="loader-percent">0%</div>
+  </div>
+
+  <!-- FIXED HEADER -->
+  <header class="site-header">
+    <nav>
+      <div class="logo">АИ<span>рецепционист</span></div>
+      <div class="nav-links">
+        <a href="#features">Функции</a>
+        <a href="#stats">Резултати</a>
+        <a href="#cta" class="nav-cta">Безплатна Демо</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO STANDALONE -->
+  <section class="hero-standalone">
+    <div class="hero-bg-grid"></div>
+    <span class="section-label">001 / Иновация</span>
+    <h1 class="hero-heading">
+      <span class="word">Вашият</span>
+      <span class="word accent">AI</span>
+      <span class="word">Рецепционист</span>
+      <span class="word">Работи</span>
+      <span class="word accent-warm">24/7</span>
+    </h1>
+    <p class="hero-tagline">Никога повече пропуснати обаждания. Никога повече изгубени клиенти.</p>
+    <div class="hero-scroll-indicator">
+      <span>Превъртете надолу</span>
+      <div class="scroll-arrow">
+        <svg width="20" height="28" viewBox="0 0 20 28" fill="none">
+          <path d="M10 2V22M10 22L3 15M10 22L17 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- CANVAS (fixed, full viewport) -->
+  <div class="canvas-wrap" id="canvas-wrap">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- DARK OVERLAY -->
+  <div id="dark-overlay"></div>
+
+  <!-- MARQUEE 1 -->
+  <div class="marquee-wrap" id="marquee-1" data-scroll-speed="-30">
+    <div class="marquee-text">УМЕН БИЗНЕС &nbsp;·&nbsp; AI РЕЦЕПЦИОНИСТ &nbsp;·&nbsp; НИКОГА ПРОПУСНАТИ &nbsp;·&nbsp;
+      УМЕН БИЗНЕС &nbsp;·&nbsp; AI РЕЦЕПЦИОНИСТ &nbsp;·&nbsp;</div>
+  </div>
+
+  <!-- MARQUEE 2 -->
+  <div class="marquee-wrap" id="marquee-2" data-scroll-speed="20">
+    <div class="marquee-text">24/7 НА ЛИНИЯ &nbsp;·&nbsp; ЗАПИСВА ЧАСОВЕ &nbsp;·&nbsp; ОТВEЩА НА ВЪПРОСИ &nbsp;·&nbsp;
+      24/7 НА ЛИНИЯ &nbsp;·&nbsp; ЗАПИСВА ЧАСОВЕ &nbsp;·&nbsp;</div>
+  </div>
+
+  <!-- MAIN SCROLL CONTAINER -->
+  <div id="scroll-container">
+
+    <!-- SECTION 1: Intro Feature -->
+    <section class="scroll-section section-content align-left" data-enter="5" data-leave="20"
+      data-animation="slide-left" id="features">
+      <div class="section-inner">
+        <span class="section-label">002 / Как Работи</span>
+        <h2 class="section-heading">Говори.<br />Разбира.<br />Действа.</h2>
+        <p class="section-body">АИ рецепционистът приема обаждания на естествен български език, разбира нуждите на
+          клиента и предприема незабавно действие — без забавяне, без грешки.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Feature detail -->
+    <section class="scroll-section section-content align-right" data-enter="20" data-leave="36"
+      data-animation="slide-right">
+      <div class="section-inner">
+        <span class="section-label">003 / Записване</span>
+        <h2 class="section-heading">Резервации<br />без усилие</h2>
+        <p class="section-body">Автоматично синхронизиране с вашия календар. Клиентите уговарят часове директно по
+          телефона — АИ се справя с всичко.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Feature detail -->
+    <section class="scroll-section section-content align-left" data-enter="36" data-leave="52" data-animation="fade-up">
+      <div class="section-inner">
+        <span class="section-label">004 / Персонализация</span>
+        <h2 class="section-heading">Звучи като<br />вашия екип</h2>
+        <p class="section-body">Обучен специално за вашия бизнес. АИ познава вашите услуги, цени и политики — отговаря
+          точно така, както бихте го направили вие.</p>
+      </div>
+    </section>
+
+    <!-- STATS SECTION (dark overlay) -->
+    <section class="scroll-section section-stats" data-enter="54" data-leave="70" data-animation="stagger-up"
+      id="stats">
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-number" data-value="98" data-decimals="0">0</span>
+          <span class="stat-suffix">%</span>
+          <span class="stat-label">Доволни клиенти</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-value="24" data-decimals="0">0</span>
+          <span class="stat-suffix">ч</span>
+          <span class="stat-label">На линия всеки ден</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-value="3" data-decimals="1">0</span>
+          <span class="stat-suffix">x</span>
+          <span class="stat-label">Повече записани часове</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-value="0" data-decimals="0">0</span>
+          <span class="stat-suffix">лв</span>
+          <span class="stat-label">Пропуснати обаждания</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Industries -->
+    <section class="scroll-section section-content align-right" data-enter="72" data-leave="85"
+      data-animation="clip-reveal">
+      <div class="section-inner">
+        <span class="section-label">005 / Индустрии</span>
+        <h2 class="section-heading">За всеки<br />бизнес</h2>
+        <p class="section-body">Медицински кабинети, салони за красота, автосервизи, ресторанти, адвокатски кантори — АИ
+          рецепционистът се адаптира към всяка сфера.</p>
+        <div class="industry-tags">
+          <span>Медицина</span>
+          <span>Красота</span>
+          <span>Авто</span>
+          <span>Ресторанти</span>
+          <span>Правни услуги</span>
+          <span>Имоти</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION (persists) -->
+    <section class="scroll-section section-cta" data-enter="87" data-leave="100" data-animation="scale-up"
+      data-persist="true" id="cta">
+      <div class="cta-inner">
+        <span class="section-label">006 / Започнете</span>
+        <h2 class="cta-heading">Готови ли сте<br />за следващото<br />ниво?</h2>
+        <p class="cta-body">Изпробвайте безплатно за 14 дни. Без кредитна карта. Без ангажименти.</p>
+        <div class="cta-actions">
+          <a href="#" class="cta-button primary" id="main-cta">Безплатна Демо →</a>
+          <a href="#" class="cta-button secondary">Вижте Цените</a>
+        </div>
+        <p class="cta-note">Над 200+ български бизнеса вече го използват</p>
+      </div>
+    </section>
+
+  </div><!-- end #scroll-container -->
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">АИ<span>рецепционист</span></div>
+      <p class="footer-copy">© 2026 АИ Рецепционист. Всички права запазени. Направено в България 🇧🇬</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
