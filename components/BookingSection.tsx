@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MoveRight, CheckCircle } from 'lucide-react';
 import { BackgroundBeams } from './ui/background-beams';
+import { supabase } from '../lib/supabase';
 
 const BookingSection: React.FC = () => {
     const [formState, setFormState] = useState({
@@ -28,20 +29,20 @@ const BookingSection: React.FC = () => {
         return () => observer.disconnect();
     }, []);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        setTimeout(() => {
-            setIsSubmitting(false);
-            setIsSubmitted(true);
-            setFormState({
-                name: '',
-                phone: '',
-                email: '',
-                type: 'clinic'
-            });
-        }, 1500);
+        await supabase.from('leads').insert({
+            name: formState.name,
+            phone: formState.phone,
+            email: formState.email,
+            business_type: formState.type,
+        });
+
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+        setFormState({ name: '', phone: '', email: '', type: 'clinic' });
     };
 
     return (
